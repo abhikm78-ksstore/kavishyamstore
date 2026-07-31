@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KaviShyam Store | Shop</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f4f4;
+}
+
+/* Header */
+
+header{
+background:#0D1B2A;
+padding:18px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+header h2{
+color:#D4AF37;
+font-size:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#D4AF37;
+}
+
+/* Banner */
+
+.banner{
+background:linear-gradient(90deg,#0D1B2A,#0F766E);
+color:white;
+text-align:center;
+padding:60px;
+}
+
+.banner h1{
+font-size:45px;
+margin-bottom:10px;
+}
+
+.banner p{
+font-size:18px;
+}
+
+/* Products */
+
+.container{
+padding:40px;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+overflow:hidden;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.card h3{
+padding:15px;
+}
+
+.price{
+padding-left:15px;
+font-size:22px;
+font-weight:bold;
+color:#0F766E;
+}
+
+button{
+margin:15px;
+padding:12px 25px;
+border:none;
+border-radius:30px;
+background:#D4AF37;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+background:#0D1B2A;
+color:white;
+}
+
+/* Footer */
+
+footer{
+background:#0D1B2A;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:50px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h2>🦚 KaviShyam Store</h2>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="shop.html">Shop</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+
+</nav>
+
+</header>
+
+<div class="banner">
+
+<h1>Premium Collection</h1>
+
+<p>Quality Products | Fast Delivery | Best Price</p>
+
+</div>
+
+<div class="container">
+
+<div class="products">
+
+<div class="card">
+
+<img src="https://picsum.photos/400/300?random=1">
+
+<h3>Premium Product 1</h3>
+
+<p class="price">₹499</p>
+
+<button>Buy Now</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://picsum.photos/400/300?random=2">
+
+<h3>Premium Product 2</h3>
+
+<p class="price">₹799</p>
+
+<button>Buy Now</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://picsum.photos/400/300?random=3">
+
+<h3>Premium Product 3</h3>
+
+<p class="price">₹999</p>
+
+<button>Buy Now</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://picsum.photos/400/300?random=4">
+
+<h3>Premium Product 4</h3>
+
+<p class="price">₹1299</p>
+
+<button>Buy Now</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://picsum.photos/400/300?random=5">
+
+<h3>Premium Product 5</h3>
+
+<p class="price">₹1599</p>
+
+<button>Buy Now</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://picsum.photos/400/300?random=6">
+
+<h3>Premium Product 6</h3>
+
+<p class="price">₹1899</p>
+
+<button>Buy Now</button>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<h3>KaviShyam Store</h3>
+
+<p>Quality You Can Trust, Service You Deserve.</p>
+
+<p>© 2026 KaviShyam Store. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+
+</html>
