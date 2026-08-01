@@ -42,7 +42,7 @@ margin-right:15px;
 
 .logo h2{
 color:#D4AF37;
-font-size:28px;
+font-size:30px;
 }
 
 nav a{
@@ -57,21 +57,25 @@ nav a:hover{
 color:#D4AF37;
 }
 
-/* Hero */
+/* Banner */
 
-.hero{
+.banner{
 background:linear-gradient(90deg,#0D1B2A,#0F766E);
 color:white;
 text-align:center;
 padding:70px 20px;
 }
 
-.hero h1{
-font-size:48px;
+.banner h1{
+font-size:50px;
 margin-bottom:10px;
 }
 
-/* Content */
+.banner p{
+font-size:20px;
+}
+
+/* About */
 
 .container{
 width:90%;
@@ -84,18 +88,45 @@ background:white;
 padding:40px;
 border-radius:15px;
 box-shadow:0 5px 15px rgba(0,0,0,.15);
-line-height:1.8;
 }
 
 .card h2{
 color:#0D1B2A;
 margin-bottom:20px;
+font-size:32px;
 }
 
 .card p{
 font-size:18px;
+line-height:1.8;
 color:#555;
 margin-bottom:20px;
+}
+
+/* Mission */
+
+.mission{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.box{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+text-align:center;
+}
+
+.box h3{
+color:#0D1B2A;
+margin:15px 0;
+}
+
+.box p{
+color:#666;
 }
 
 /* Footer */
@@ -104,19 +135,40 @@ footer{
 background:#0D1B2A;
 color:white;
 text-align:center;
-padding:30px;
+padding:35px;
 margin-top:50px;
 }
 
 footer img{
 width:80px;
 border-radius:50%;
-margin-bottom:10px;
+margin-bottom:15px;
 }
 
 footer h2{
 color:#D4AF37;
 margin-bottom:10px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:15px;
+}
+
+nav a{
+display:inline-block;
+margin:8px;
+}
+
+.banner h1{
+font-size:35px;
+}
+
 }
 
 </style>
@@ -129,9 +181,7 @@ margin-bottom:10px;
 
 <div class="logo">
 
-<a href="index.html">
-<img src="logo.png" alt="KaviShyam Store Logo">
-</a>
+<img src="logo.png" alt="Logo">
 
 <h2>KaviShyam Store</h2>
 
@@ -148,11 +198,11 @@ margin-bottom:10px;
 
 </header>
 
-<section class="hero">
+<section class="banner">
 
 <h1>About KaviShyam Store</h1>
 
-<p>Quality You Can Trust, Service You Deserve.</p>
+<p>Your Trusted Online Shopping Destination</p>
 
 </section>
 
@@ -163,20 +213,50 @@ margin-bottom:10px;
 <h2>Welcome to KaviShyam Store</h2>
 
 <p>
-KaviShyam Store is a trusted online shopping platform dedicated to providing premium quality products at affordable prices.
+KaviShyam Store is an online shopping platform focused on providing trending fashion and lifestyle products at affordable prices.
 </p>
 
 <p>
-Our mission is to deliver excellent customer satisfaction through quality products, secure shopping, fast delivery and reliable customer support.
+We carefully select popular products to help our customers discover stylish, high-quality items in one place. Our goal is to make online shopping simple, convenient, and enjoyable.
 </p>
 
 <p>
-We believe every customer deserves honesty, trust and the best shopping experience. Your satisfaction is our highest priority.
+Currently, we showcase trending products available through trusted online marketplaces. As we grow, we aim to expand our collection and provide even better services to our customers.
 </p>
 
-<p>
-Thank you for choosing KaviShyam Store. We look forward to serving you with the best products and services.
-</p>
+</div>
+
+<div class="mission">
+
+<div class="box">
+
+<h2>🎯</h2>
+
+<h3>Our Mission</h3>
+
+<p>To make quality fashion and lifestyle products easily accessible to everyone.</p>
+
+</div>
+
+<div class="box">
+
+<h2>⭐</h2>
+
+<h3>Our Vision</h3>
+
+<p>To become one of India's trusted online shopping destinations.</p>
+
+</div>
+
+<div class="box">
+
+<h2>🤝</h2>
+
+<h3>Our Promise</h3>
+
+<p>Quality, honesty, customer satisfaction, and reliable support.</p>
+
+</div>
 
 </div>
 
@@ -189,6 +269,14 @@ Thank you for choosing KaviShyam Store. We look forward to serving you with the 
 <h2>KaviShyam Store</h2>
 
 <p>Quality You Can Trust, Service You Deserve.</p>
+
+<br>
+
+<p>📞 +91 7289094501</p>
+
+<p>📧 info@kavishyamstore.in</p>
+
+<p>📍 New Delhi, India</p>
 
 <br>
 
