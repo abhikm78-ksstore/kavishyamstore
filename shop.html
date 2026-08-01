@@ -15,8 +15,10 @@ font-family:Arial,sans-serif;
 }
 
 body{
-background:#f4f4f4;
+background:#f5f5f5;
 }
+
+/* Header */
 
 header{
 background:#0D1B2A;
@@ -24,6 +26,7 @@ padding:20px 40px;
 display:flex;
 justify-content:space-between;
 align-items:center;
+flex-wrap:wrap;
 }
 
 .logo{
@@ -35,8 +38,7 @@ color:#D4AF37;
 nav a{
 color:white;
 text-decoration:none;
-margin-left:25px;
-font-size:18px;
+margin-left:20px;
 font-weight:bold;
 }
 
@@ -44,11 +46,13 @@ nav a:hover{
 color:#D4AF37;
 }
 
+/* Banner */
+
 .banner{
 background:linear-gradient(90deg,#0D1B2A,#0F766E);
 color:white;
 text-align:center;
-padding:60px 20px;
+padding:70px 20px;
 }
 
 .banner h1{
@@ -60,8 +64,12 @@ margin-bottom:10px;
 font-size:18px;
 }
 
+/* Products */
+
 .container{
-padding:50px;
+width:90%;
+margin:auto;
+padding:40px 0;
 }
 
 .products{
@@ -72,9 +80,9 @@ gap:30px;
 
 .card{
 background:white;
-border-radius:15px;
+border-radius:12px;
 overflow:hidden;
-box-shadow:0 5px 15px rgba(0,0,0,.2);
+box-shadow:0 5px 15px rgba(0,0,0,.15);
 transition:.3s;
 }
 
@@ -89,38 +97,62 @@ object-fit:cover;
 }
 
 .card h3{
-padding:15px;
+padding:15px 15px 5px;
+color:#0D1B2A;
 }
 
 .price{
 padding-left:15px;
-font-size:24px;
+font-size:22px;
 font-weight:bold;
 color:#0F766E;
 }
 
-button{
-margin:15px;
-padding:12px 30px;
-border:none;
+.buy{
+display:inline-block;
+margin:20px 15px;
 background:#D4AF37;
-border-radius:30px;
-font-size:16px;
+padding:12px 30px;
+color:#0D1B2A;
 font-weight:bold;
-cursor:pointer;
+text-decoration:none;
+border-radius:30px;
 }
 
-button:hover{
+.buy:hover{
 background:#0D1B2A;
 color:white;
 }
+
+/* Footer */
 
 footer{
 background:#0D1B2A;
 color:white;
 text-align:center;
-padding:25px;
-margin-top:50px;
+padding:30px;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:15px;
+}
+
+nav a{
+display:inline-block;
+margin:10px;
+}
+
+.banner h1{
+font-size:35px;
+}
+
 }
 
 </style>
@@ -153,13 +185,15 @@ margin-top:50px;
 
 <h1>Premium Collection</h1>
 
-<p>Quality Products | Best Price | Trusted Store</p>
+<p>Quality Products | Fast Delivery | Best Price</p>
 
 </section>
 
 <div class="container">
 
 <div class="products">
+
+<!-- Product 1 -->
 
 <div class="card">
 
@@ -169,9 +203,17 @@ margin-top:50px;
 
 <p class="price">₹499</p>
 
-<button>Buy Now</button>
+<a class="buy"
+href="https://wa.me/917289094501?text=Hello%20KaviShyam%20Store,%20I%20want%20to%20buy%20Premium%20Product%201"
+target="_blank">
+
+Buy Now
+
+</a>
 
 </div>
+
+<!-- Product 2 -->
 
 <div class="card">
 
@@ -181,9 +223,17 @@ margin-top:50px;
 
 <p class="price">₹799</p>
 
-<button>Buy Now</button>
+<a class="buy"
+href="https://wa.me/917289094501?text=Hello%20KaviShyam%20Store,%20I%20want%20to%20buy%20Premium%20Product%202"
+target="_blank">
+
+Buy Now
+
+</a>
 
 </div>
+
+<!-- Product 3 -->
 
 <div class="card">
 
@@ -193,9 +243,17 @@ margin-top:50px;
 
 <p class="price">₹999</p>
 
-<button>Buy Now</button>
+<a class="buy"
+href="https://wa.me/917289094501?text=Hello%20KaviShyam%20Store,%20I%20want%20to%20buy%20Premium%20Product%203"
+target="_blank">
+
+Buy Now
+
+</a>
 
 </div>
+
+<!-- Product 4 -->
 
 <div class="card">
 
@@ -205,9 +263,17 @@ margin-top:50px;
 
 <p class="price">₹1299</p>
 
-<button>Buy Now</button>
+<a class="buy"
+href="https://wa.me/917289094501?text=Hello%20KaviShyam%20Store,%20I%20want%20to%20buy%20Premium%20Product%204"
+target="_blank">
+
+Buy Now
+
+</a>
 
 </div>
+
+<!-- Product 5 -->
 
 <div class="card">
 
@@ -217,9 +283,17 @@ margin-top:50px;
 
 <p class="price">₹1599</p>
 
-<button>Buy Now</button>
+<a class="buy"
+href="https://wa.me/917289094501?text=Hello%20KaviShyam%20Store,%20I%20want%20to%20buy%20Premium%20Product%205"
+target="_blank">
+
+Buy Now
+
+</a>
 
 </div>
+
+<!-- Product 6 -->
 
 <div class="card">
 
@@ -227,9 +301,15 @@ margin-top:50px;
 
 <h3>Premium Product 6</h3>
 
-<p class="price">₹1899</p>
+<p class="price">₹1999</p>
 
-<button>Buy Now</button>
+<a class="buy"
+href="https://wa.me/917289094501?text=Hello%20KaviShyam%20Store,%20I%20want%20to%20buy%20Premium%20Product%206"
+target="_blank">
+
+Buy Now
+
+</a>
 
 </div>
 
@@ -241,7 +321,17 @@ margin-top:50px;
 
 <h2>KaviShyam Store</h2>
 
+<br>
+
 <p>Quality You Can Trust, Service You Deserve.</p>
+
+<br>
+
+<p>📞 +91 7289094501</p>
+
+<p>📧 info@kavishyamstore.in</p>
+
+<br>
 
 <p>© 2026 KaviShyam Store. All Rights Reserved.</p>
 
