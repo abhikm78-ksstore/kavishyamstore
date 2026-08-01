@@ -18,14 +18,15 @@ body{
 background:#f5f5f5;
 }
 
-/* Header */
-
 header{
 background:#0D1B2A;
 padding:15px 40px;
 display:flex;
 justify-content:space-between;
 align-items:center;
+position:sticky;
+top:0;
+z-index:999;
 }
 
 .logo{
@@ -42,14 +43,12 @@ margin-right:15px;
 
 .logo h2{
 color:#D4AF37;
-font-size:28px;
 }
 
 nav a{
 color:white;
 text-decoration:none;
 margin-left:25px;
-font-size:18px;
 font-weight:bold;
 }
 
@@ -57,13 +56,11 @@ nav a:hover{
 color:#D4AF37;
 }
 
-/* Banner */
-
 .banner{
 background:linear-gradient(90deg,#0D1B2A,#0F766E);
-color:white;
+padding:60px;
 text-align:center;
-padding:60px 20px;
+color:white;
 }
 
 .banner h1{
@@ -71,21 +68,28 @@ font-size:48px;
 margin-bottom:10px;
 }
 
-.banner p{
-font-size:20px;
+.search{
+text-align:center;
+padding:30px;
 }
 
-/* Products */
+.search input{
+width:60%;
+padding:15px;
+border-radius:30px;
+border:1px solid #ccc;
+font-size:18px;
+}
 
 .container{
 width:90%;
 margin:auto;
-padding:50px 0;
+padding-bottom:50px;
 }
 
 .products{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:30px;
 }
 
@@ -93,7 +97,7 @@ gap:30px;
 background:white;
 border-radius:15px;
 overflow:hidden;
-box-shadow:0 5px 15px rgba(0,0,0,.2);
+box-shadow:0 5px 15px rgba(0,0,0,.15);
 transition:.3s;
 }
 
@@ -103,7 +107,7 @@ transform:translateY(-8px);
 
 .card img{
 width:100%;
-height:260px;
+height:280px;
 object-fit:cover;
 }
 
@@ -120,9 +124,10 @@ color:#0F766E;
 }
 
 .buy{
-display:inline-block;
+display:block;
 margin:20px 15px;
-padding:12px 25px;
+padding:12px;
+text-align:center;
 background:#D4AF37;
 color:#0D1B2A;
 text-decoration:none;
@@ -134,8 +139,6 @@ font-weight:bold;
 background:#0D1B2A;
 color:white;
 }
-
-/* Footer */
 
 footer{
 background:#0D1B2A;
@@ -155,7 +158,7 @@ margin-top:50px;
 
 <div class="logo">
 
-<img src="logo.png" alt="Logo">
+<img src="logo.png">
 
 <h2>KaviShyam Store</h2>
 
@@ -164,11 +167,8 @@ margin-top:50px;
 <nav>
 
 <a href="index.html">Home</a>
-
 <a href="shop.html">Shop</a>
-
 <a href="about.html">About</a>
-
 <a href="contact.html">Contact</a>
 
 </nav>
@@ -177,9 +177,15 @@ margin-top:50px;
 
 <div class="banner">
 
-<h1>Premium Collection</h1>
+<h1>Women's Fashion Collection</h1>
 
-<p>Quality You Can Trust, Service You Deserve.</p>
+<p>Latest Trending Products From Meesho</p>
+
+</div>
+
+<div class="search">
+
+<input type="text" placeholder="Search Products...">
 
 </div>
 
@@ -188,75 +194,128 @@ margin-top:50px;
 <div class="products">
 
 <div class="card">
-
-<img src="https://picsum.photos/500/400?random=1">
-
-<h3>Premium Product 1</h3>
-
+<img src="https://picsum.photos/500/600?1">
+<h3>Designer Kurti Set</h3>
 <p class="price">₹499</p>
-
-<a href="contact.html" class="buy">Buy Now</a>
-
+<a href="https://www.meesho.com/" target="_blank" class="buy">Buy on Meesho</a>
 </div>
 
 <div class="card">
+<img src="https://picsum.photos/500/600?2">
+<h3>Premium Saree</h3>
+<p class="price">₹699</p>
+<a href="https://www.meesho.com/" target="_blank" class="buy">Buy on Meesho</a>
+</div>
 
-<img src="https://picsum.photos/500/400?random=2">
-
-<h3>Premium Product 2</h3>
-
+<div class="card">
+<img src="https://picsum.photos/500/600?3">
+<h3>Women's Handbag</h3>
 <p class="price">₹799</p>
-
-<a href="contact.html" class="buy">Buy Now</a>
-
+<a href="https://www.meesho.com/" target="_blank" class="buy">Buy on Meesho</a>
 </div>
 
 <div class="card">
+<img src="https://picsum.photos/500/600?4">
+<h3>Stylish Sandals</h3>
+<p class="price">₹599</p>
+<a href="https://www.meesho.com/" target="_blank" class="buy">Buy on Meesho</a>
+</div>
 
-<img src="https://picsum.photos/500/400?random=3">
+<div class="card">
+<img src="https://picsum.photos/500/600?5">
+<h3>Beauty Makeup Kit</h3>
+<p class="price">₹399</p>
+<a href="https://www.meesho.com/" target="_blank" class="buy">Buy on Meesho</a>
+</div>
 
-<h3>Premium Product 3</h3>
+<div class="card">
+<img src="https://picsum.photos/500/600?6">
+<h3>Artificial Jewellery</h3>
+<p class="price">₹299</p>
+<a href="https://www.meesho.com/" target="_blank" class="buy">Buy on Meesho</a>
+</div>
+<div class="card">
+<img src="https://picsum.photos/500/600?7">
+<h3>Women's Watch</h3>
+<p class="price">₹899</p>
+<a href="https://www.meesho.com/" target="_blank" class="buy">Buy on Meesho</a>
+</div>
 
+<div class="card">
+<img src="https://picsum.photos/500/600?8">
+<h3>Skincare Combo</h3>
+<p class="price">₹499</p>
+<a href="https://www.meesho.com/" target="_blank" class="buy">Buy on Meesho</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/500/600?9">
+<h3>Women's Top</h3>
+<p class="price">₹399</p>
+<a href="https://www.meesho.com/" target="_blank" class="buy">Buy on Meesho</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/500/600?10">
+<h3>Leggings Pack</h3>
+<p class="price">₹299</p>
+<a href="https://www.meesho.com/" target="_blank" class="buy">Buy on Meesho</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/500/600?11">
+<h3>Women's Perfume</h3>
+<p class="price">₹599</p>
+<a href="https://www.meesho.com/" target="_blank" class="buy">Buy on Meesho</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/500/600?12">
+<h3>Hair Dryer</h3>
 <p class="price">₹999</p>
-
-<a href="contact.html" class="buy">Buy Now</a>
-
+<a href="https://www.meesho.com/" target="_blank" class="buy">Buy on Meesho</a>
 </div>
 
 <div class="card">
-
-<img src="https://picsum.photos/500/400?random=4">
-
-<h3>Premium Product 4</h3>
-
-<p class="price">₹1299</p>
-
-<a href="contact.html" class="buy">Buy Now</a>
-
+<img src="https://picsum.photos/500/600?13">
+<h3>Face Serum</h3>
+<p class="price">₹349</p>
+<a href="https://www.meesho.com/" target="_blank" class="buy">Buy on Meesho</a>
 </div>
 
 <div class="card">
-
-<img src="https://picsum.photos/500/400?random=5">
-
-<h3>Premium Product 5</h3>
-
-<p class="price">₹1499</p>
-
-<a href="contact.html" class="buy">Buy Now</a>
-
+<img src="https://picsum.photos/500/600?14">
+<h3>Women's Jeans</h3>
+<p class="price">₹799</p>
+<a href="https://www.meesho.com/" target="_blank" class="buy">Buy on Meesho</a>
 </div>
 
 <div class="card">
+<img src="https://picsum.photos/500/600?15">
+<h3>Night Suit</h3>
+<p class="price">₹699</p>
+<a href="https://www.meesho.com/" target="_blank" class="buy">Buy on Meesho</a>
+</div>
 
-<img src="https://picsum.photos/500/400?random=6">
+<div class="card">
+<img src="https://picsum.photos/500/600?16">
+<h3>Kurti Combo Pack</h3>
+<p class="price">₹899</p>
+<a href="https://www.meesho.com/" target="_blank" class="buy">Buy on Meesho</a>
+</div>
 
-<h3>Premium Product 6</h3>
+<div class="card">
+<img src="https://picsum.photos/500/600?17">
+<h3>Party Wear Saree</h3>
+<p class="price">₹1199</p>
+<a href="https://www.meesho.com/" target="_blank" class="buy">Buy on Meesho</a>
+</div>
 
-<p class="price">₹1999</p>
-
-<a href="contact.html" class="buy">Buy Now</a>
-
+<div class="card">
+<img src="https://picsum.photos/500/600?18">
+<h3>Designer Earrings</h3>
+<p class="price">₹249</p>
+<a href="https://www.meesho.com/" target="_blank" class="buy">Buy on Meesho</a>
 </div>
 
 </div>
@@ -265,13 +324,21 @@ margin-top:50px;
 
 <footer>
 
-<img src="logo.png" width="80">
+<img src="logo.png" width="80" style="border-radius:50%;">
 
-<h2>KaviShyam Store</h2>
+<h2 style="color:#D4AF37;margin-top:10px;">
+KaviShyam Store
+</h2>
+
+<p>Quality You Can Trust, Service You Deserve.</p>
 
 <br>
 
-<p>Quality You Can Trust, Service You Deserve.</p>
+<p>📞 +91 7289094501</p>
+
+<p>📧 info@kavishyamstore.in</p>
+
+<p>📍 New Delhi, India</p>
 
 <br>
 
