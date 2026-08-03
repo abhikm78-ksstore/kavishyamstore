@@ -1,483 +1,780 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>KaviShyam Store | Women's Collection</title>
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#f5f5f5;
-}
-
-/* Header */
-
-header{
-background:#0D1B2A;
-padding:18px 40px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-position:sticky;
-top:0;
-z-index:1000;
-}
-
-.logo{
-display:flex;
-align-items:center;
-}
-
-.logo img{
-width:60px;
-height:60px;
-border-radius:50%;
-margin-right:15px;
-}
-
-.logo h2{
-color:#D4AF37;
-font-size:32px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:25px;
-font-size:18px;
-font-weight:bold;
-}
-
-nav a:hover{
-color:#D4AF37;
-}
-
-/* Banner */
-
-.banner{
-
-background:linear-gradient(rgba(13,27,42,.75),rgba(15,118,110,.75)),
-url("https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=1600");
-
-background-size:cover;
-background-position:center;
-height:450px;
-
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-color:white;
-
-}
-
-.banner h1{
-
-font-size:60px;
-
-}
-
-.banner p{
-
-font-size:22px;
-margin-top:20px;
-
-}
-
-/* Search */
-
-.search-box{
-
-padding:30px;
-text-align:center;
-
-}
-
-.search-box input{
-
-width:70%;
-padding:18px;
-font-size:18px;
-border-radius:40px;
-border:2px solid #D4AF37;
-
-}
-
-/* Products */
-
-.container{
-
-width:95%;
-margin:auto;
-
-}
-
-.products{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-gap:30px;
-
-padding-bottom:60px;
-
-}
-
-.card{
-
-background:white;
-border-radius:15px;
-overflow:hidden;
-
-box-shadow:0 5px 15px rgba(0,0,0,.2);
-
-transition:.3s;
-
-}
-
-.card:hover{
-
-transform:translateY(-8px);
-
-}
-
-.card img{
-
-width:100%;
-height:330px;
-object-fit:cover;
-
-}
-
-.card h3{
-
-padding:15px;
-
-}
-
-.price{
-
-padding-left:15px;
-
-font-size:24px;
-
-color:#0F766E;
-
-font-weight:bold;
-
-}
-
-.btn{
-
-display:inline-block;
-
-margin:15px;
-
-background:#D4AF37;
-
-padding:12px 30px;
-
-border-radius:30px;
-
-text-decoration:none;
-
-color:#0D1B2A;
-
-font-weight:bold;
-
-}
-
-.btn:hover{
-
-background:#0D1B2A;
-
-color:white;
-
-}
-
-footer{
-
-background:#0D1B2A;
-
-color:white;
-
-text-align:center;
-
-padding:30px;
-
-}
-
-</style>
-
-</head>
-
-<body>
-
-<header>
-
-<div class="logo">
-
-<img src="logo.png">
-
-<h2>KaviShyam Store</h2>
-
-</div>
-
-<nav>
-
-<a href="index.html">Home</a>
-
-<a href="shop.html">Shop</a>
-
-<a href="about.html">About</a>
-
-<a href="contact.html">Contact</a>
-
-</nav>
-
-</header>
-
-<section class="banner">
-
-<div>
-
-<h1>Women's Fashion Collection</h1>
-
-<p>Premium Quality • Best Price • Fast Delivery</p>
-
-</div>
-
-</section>
-
-<div class="search-box">
-
-<input
-type="text"
-id="search"
-placeholder="Search Products..."
-onkeyup="searchProducts()">
-
-</div>
-
-<div class="container">
-
-<div class="products" id="productList">
-  <!-- Product 1 -->
+<!-- PRODUCT 1 -->
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=800">
-
-<h3>Designer Saree Collection</h3>
-
+<img src="images/images (1).jpg" alt="Designer Saree">
+<h3>Designer Saree</h3>
 <p class="price">₹699</p>
-
-<a href="https://www.meesho.com/" target="_blank" class="btn">
-
-View on Meesho
-
-</a>
-
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
 </div>
 
-<!-- Product 2 -->
+<!-- PRODUCT 2 -->
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=800">
-
-<h3>Printed Kurti Set</h3>
-
+<img src="images/images (2).jpg" alt="Printed Kurti">
+<h3>Printed Kurti</h3>
 <p class="price">₹499</p>
-
-<a href="https://www.meesho.com/" target="_blank" class="btn">
-
-View on Meesho
-
-</a>
-
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
 </div>
 
-<!-- Product 3 -->
+<!-- PRODUCT 3 -->
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=800">
-
+<img src="images/images (3).jpg" alt="Women's Handbag">
 <h3>Women's Handbag</h3>
-
 <p class="price">₹799</p>
-
-<a href="https://www.meesho.com/" target="_blank" class="btn">
-
-View on Meesho
-
-</a>
-
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
 </div>
 
-<!-- Product 4 -->
+<!-- PRODUCT 4 -->
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=800">
-
-<h3>Artificial Jewellery Set</h3>
-
-<p class="price">₹349</p>
-
-<a href="https://www.meesho.com/" target="_blank" class="btn">
-
-View on Meesho
-
-</a>
-
+<img src="images/images (4).jpg" alt="Nail Polish">
+<h3>Nail Polish</h3>
+<p class="price">₹199</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
 </div>
 
-<!-- Product 5 -->
+<!-- PRODUCT 5 -->
 <div class="card">
+<img src="images/images (5).jpg" alt="Gel Nail Polish">
+<h3>Gel Nail Polish</h3>
+<p class="price">₹249</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
 
-<img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800">
-
-<h3>Makeup Kit Combo</h3>
-
+<!-- PRODUCT 6 -->
+<div class="card">
+<img src="images/images (6).jpg" alt="Makeup Kit">
+<h3>Makeup Kit</h3>
 <p class="price">₹399</p>
-
-<a href="https://www.meesho.com/" target="_blank" class="btn">
-
-View on Meesho
-
-</a>
-
-</div>
-<div class="card">
-<img src="https://via.placeholder.com/400x500/F8E1E7/000000?text=Women's+Watch" alt="Women's Watch">
-<h3>Women's Smart Watch</h3>
-<p class="price">₹999</p>
 <a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
 </div>
 
+<!-- PRODUCT 7 -->
 <div class="card">
-<img src="https://via.placeholder.com/400x500/F5D6C6/000000?text=Sandals" alt="Sandals">
-<h3>Stylish Women's Sandals</h3>
-<p class="price">₹699</p>
+<img src="images/images (7).jpg" alt="Lipstick Set">
+<h3>Lipstick Set</h3>
+<p class="price">₹299</p>
 <a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
 </div>
 
+<!-- PRODUCT 8 -->
 <div class="card">
-<img src="https://via.placeholder.com/400x500/E8F5E9/000000?text=Skincare+Kit" alt="Skincare Kit">
-<h3>Skincare Combo Kit</h3>
-<p class="price">₹599</p>
-<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
-</div>
-
-<div class="card">
-<img src="https://via.placeholder.com/400x500/F3E5F5/000000?text=Perfume" alt="Perfume">
+<img src="images/images (8).jpg" alt="Perfume">
 <h3>Women's Perfume</h3>
 <p class="price">₹499</p>
 <a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
 </div>
 
+<!-- PRODUCT 9 -->
 <div class="card">
-<img src="https://via.placeholder.com/400x500/FFF3E0/000000?text=Party+Wear" alt="Party Wear">
-<h3>Party Wear Dress</h3>
-<p class="price">₹1299</p>
+<img src="images/images (9).jpg" alt="Bangles">
+<h3>Designer Bangles</h3>
+<p class="price">₹199</p>
 <a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
 </div>
+
+<!-- PRODUCT 10 -->
 <div class="card">
-<img src="https://via.placeholder.com/400x500/FCE4EC/000000?text=Women+Jeans" alt="Women's Jeans">
+<img src="images/images (10).jpg" alt="Gold Bangles">
+<h3>Gold Plated Bangles</h3>
+<p class="price">₹299</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 11 -->
+<div class="card">
+<img src="images/images (11).jpg" alt="Bracelet">
+<h3>Women's Bracelet</h3>
+<p class="price">₹249</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 12 -->
+<div class="card">
+<img src="images/images (12).jpg" alt="Earrings">
+<h3>Stylish Earrings</h3>
+<p class="price">₹179</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 13 -->
+<div class="card">
+<img src="images/images (13).jpg" alt="Necklace">
+<h3>Necklace Set</h3>
+<p class="price">₹399</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 14 -->
+<div class="card">
+<img src="images/images (14).jpg" alt="Anklet">
+<h3>Silver Anklet</h3>
+<p class="price">₹249</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 15 -->
+<div class="card">
+<img src="images/images (15).jpg" alt="Watch">
+<h3>Women's Watch</h3>
+<p class="price">₹899</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 16 -->
+<div class="card">
+<img src="images/images (16).jpg" alt="Heels">
+<h3>Party Heels</h3>
+<p class="price">₹799</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 17 -->
+<div class="card">
+<img src="images/images (17).jpg" alt="Sandals">
+<h3>Women's Sandals</h3>
+<p class="price">₹699</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 18 -->
+<div class="card">
+<img src="images/images (18).jpg" alt="Slippers">
+<h3>Comfort Slippers</h3>
+<p class="price">₹399</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 19 -->
+<div class="card">
+<img src="images/images (19).jpg" alt="Kurti Combo">
+<h3>Kurti Combo</h3>
+<p class="price">₹999</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 20 -->
+<div class="card">
+<img src="images/images (20).jpg" alt="Cotton Saree">
+<h3>Cotton Saree</h3>
+<p class="price">₹599</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 21 -->
+<div class="card">
+<img src="images/images (21).jpg" alt="Party Dress">
+<h3>Party Dress</h3>
+<p class="price">₹1199</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 22 -->
+<div class="card">
+<img src="images/images (22).jpg" alt="Night Suit">
+<h3>Night Suit</h3>
+<p class="price">₹799</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 23 -->
+<div class="card">
+<img src="images/images (23).jpg" alt="Women's Jeans">
 <h3>Women's Jeans</h3>
 <p class="price">₹899</p>
 <a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
 </div>
 
+<!-- PRODUCT 24 -->
 <div class="card">
-<img src="https://via.placeholder.com/400x500/E1F5FE/000000?text=Kurti+Combo" alt="Kurti Combo">
-<h3>Kurti Combo Pack</h3>
-<p class="price">₹1199</p>
-<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
-</div>
-
-<div class="card">
-<img src="https://via.placeholder.com/400x500/F9FBE7/000000?text=Women+Top" alt="Women's Top">
+<img src="images/images (24).jpg" alt="Women's Top">
 <h3>Women's Top</h3>
 <p class="price">₹499</p>
 <a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
 </div>
 
+<!-- PRODUCT 25 -->
 <div class="card">
-<img src="https://via.placeholder.com/400x500/E8EAF6/000000?text=Night+Suit" alt="Night Suit">
-<h3>Women's Night Suit</h3>
+<img src="images/images (25).jpg" alt="Skincare Kit">
+<h3>Skincare Kit</h3>
+<p class="price">₹599</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+<!-- PRODUCT 26 -->
+<div class="card">
+<img src="images/images (26).jpg" alt="Face Wash">
+<h3>Face Wash</h3>
+<p class="price">₹249</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 27 -->
+<div class="card">
+<img src="images/images (27).jpg" alt="Body Lotion">
+<h3>Body Lotion</h3>
+<p class="price">₹349</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 28 -->
+<div class="card">
+<img src="images/images (28).jpg" alt="Hair Oil">
+<h3>Hair Oil</h3>
+<p class="price">₹299</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 29 -->
+<div class="card">
+<img src="images/images (29).jpg" alt="Hair Serum">
+<h3>Hair Serum</h3>
+<p class="price">₹399</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 30 -->
+<div class="card">
+<img src="images/images (30).jpg" alt="Shampoo">
+<h3>Herbal Shampoo</h3>
+<p class="price">₹349</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 31 -->
+<div class="card">
+<img src="images/images (31).jpg" alt="Conditioner">
+<h3>Hair Conditioner</h3>
+<p class="price">₹349</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 32 -->
+<div class="card">
+<img src="images/images (32).jpg" alt="Lip Balm">
+<h3>Lip Balm</h3>
+<p class="price">₹149</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 33 -->
+<div class="card">
+<img src="images/images (33).jpg" alt="Compact Powder">
+<h3>Compact Powder</h3>
+<p class="price">₹299</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 34 -->
+<div class="card">
+<img src="images/images (34).jpg" alt="Foundation">
+<h3>Liquid Foundation</h3>
+<p class="price">₹499</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 35 -->
+<div class="card">
+<img src="images/images (35).jpg" alt="Eye Liner">
+<h3>Eye Liner</h3>
+<p class="price">₹199</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 36 -->
+<div class="card">
+<img src="images/images (36).jpg" alt="Mascara">
+<h3>Mascara</h3>
+<p class="price">₹249</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 37 -->
+<div class="card">
+<img src="images/images (37).jpg" alt="Blush">
+<h3>Blush Kit</h3>
+<p class="price">₹299</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 38 -->
+<div class="card">
+<img src="images/images (38).jpg" alt="Face Cream">
+<h3>Face Cream</h3>
+<p class="price">₹349</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 39 -->
+<div class="card">
+<img src="images/images (39).jpg" alt="Sunscreen">
+<h3>Sunscreen SPF50</h3>
+<p class="price">₹449</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 40 -->
+<div class="card">
+<img src="images/images (40).jpg" alt="Face Pack">
+<h3>Face Pack</h3>
+<p class="price">₹249</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 41 -->
+<div class="card">
+<img src="images/images (41).jpg" alt="Tote Bag">
+<h3>Tote Bag</h3>
+<p class="price">₹499</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 42 -->
+<div class="card">
+<img src="images/images (42).jpg" alt="Wallet">
+<h3>Women's Wallet</h3>
+<p class="price">₹399</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 43 -->
+<div class="card">
+<img src="images/images (43).jpg" alt="Clutch">
+<h3>Party Clutch</h3>
+<p class="price">₹599</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 44 -->
+<div class="card">
+<img src="images/images (44).jpg" alt="Shoulder Bag">
+<h3>Shoulder Bag</h3>
 <p class="price">₹799</p>
 <a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
 </div>
 
+<!-- PRODUCT 45 -->
 <div class="card">
-<img src="https://via.placeholder.com/400x500/FBE9E7/000000?text=Hair+Care" alt="Hair Care">
-<h3>Hair Care Combo</h3>
+<img src="images/images (45).jpg" alt="Travel Bag">
+<h3>Travel Bag</h3>
+<p class="price">₹999</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 46 -->
+<div class="card">
+<img src="images/images (46).jpg" alt="Silver Ring">
+<h3>Silver Ring</h3>
+<p class="price">₹199</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 47 -->
+<div class="card">
+<img src="images/images (47).jpg" alt="Toe Ring">
+<h3>Toe Ring</h3>
+<p class="price">₹149</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 48 -->
+<div class="card">
+<img src="images/images (48).jpg" alt="Pendant">
+<h3>Pendant Set</h3>
+<p class="price">₹349</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 49 -->
+<div class="card">
+<img src="images/images (49).jpg" alt="Chain">
+<h3>Gold Chain</h3>
+<p class="price">₹449</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 50 -->
+<div class="card">
+<img src="images/images (50).jpg" alt="Jewellery Combo">
+<h3>Jewellery Combo</h3>
+<p class="price">₹699</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+<!-- PRODUCT 51 -->
+<div class="card">
+<img src="images/images (51).jpg" alt="Cotton Saree">
+<h3>Cotton Saree</h3>
 <p class="price">₹649</p>
 <a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
 </div>
 
+<!-- PRODUCT 52 -->
+<div class="card">
+<img src="images/images (52).jpg" alt="Silk Saree">
+<h3>Silk Saree</h3>
+<p class="price">₹1299</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
 </div>
+
+<!-- PRODUCT 53 -->
+<div class="card">
+<img src="images/images (53).jpg" alt="Party Saree">
+<h3>Party Wear Saree</h3>
+<p class="price">₹1499</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
 </div>
 
-<script>
+<!-- PRODUCT 54 -->
+<div class="card">
+<img src="images/images (54).jpg" alt="Printed Saree">
+<h3>Printed Saree</h3>
+<p class="price">₹799</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
 
-function searchProducts(){
+<!-- PRODUCT 55 -->
+<div class="card">
+<img src="images/images (55).jpg" alt="Designer Suit">
+<h3>Designer Suit</h3>
+<p class="price">₹999</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
 
-let input=document.getElementById("search").value.toLowerCase();
+<!-- PRODUCT 56 -->
+<div class="card">
+<img src="images/images (56).jpg" alt="Kurti Set">
+<h3>Kurti Set</h3>
+<p class="price">₹899</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
 
-let cards=document.querySelectorAll(".card");
+<!-- PRODUCT 57 -->
+<div class="card">
+<img src="images/images (57).jpg" alt="Ethnic Gown">
+<h3>Ethnic Gown</h3>
+<p class="price">₹1299</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
 
-cards.forEach(function(card){
+<!-- PRODUCT 58 -->
+<div class="card">
+<img src="images/images (58).jpg" alt="Anarkali Dress">
+<h3>Anarkali Dress</h3>
+<p class="price">₹1499</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
 
-let title=card.querySelector("h3").innerText.toLowerCase();
+<!-- PRODUCT 59 -->
+<div class="card">
+<img src="images/images (59).jpg" alt="Women's Hoodie">
+<h3>Women's Hoodie</h3>
+<p class="price">₹799</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
 
-if(title.indexOf(input)>-1){
+<!-- PRODUCT 60 -->
+<div class="card">
+<img src="images/images (60).jpg" alt="Sweatshirt">
+<h3>Sweatshirt</h3>
+<p class="price">₹699</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
 
-card.style.display="block";
+<!-- PRODUCT 61 -->
+<div class="card">
+<img src="images/images (61).jpg" alt="Women's T-Shirt">
+<h3>Women's T-Shirt</h3>
+<p class="price">₹399</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
 
-}else{
+<!-- PRODUCT 62 -->
+<div class="card">
+<img src="images/images (62).jpg" alt="Denim Jacket">
+<h3>Denim Jacket</h3>
+<p class="price">₹1199</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
 
-card.style.display="none";
+<!-- PRODUCT 63 -->
+<div class="card">
+<img src="images/images (63).jpg" alt="Winter Coat">
+<h3>Winter Coat</h3>
+<p class="price">₹1799</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
 
-}
+<!-- PRODUCT 64 -->
+<div class="card">
+<img src="images/images (64).jpg" alt="Formal Shirt">
+<h3>Women's Formal Shirt</h3>
+<p class="price">₹699</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
 
-});
+<!-- PRODUCT 65 -->
+<div class="card">
+<img src="images/images (65).jpg" alt="Palazzo">
+<h3>Palazzo Pants</h3>
+<p class="price">₹499</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
 
-}
+<!-- PRODUCT 66 -->
+<div class="card">
+<img src="images/images (66).jpg" alt="Capri">
+<h3>Women's Capri</h3>
+<p class="price">₹399</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
 
-</script>
+<!-- PRODUCT 67 -->
+<div class="card">
+<img src="images/images (67).jpg" alt="Track Pant">
+<h3>Track Pant</h3>
+<p class="price">₹599</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
 
-<footer>
+<!-- PRODUCT 68 -->
+<div class="card">
+<img src="images/images (68).jpg" alt="Sports Shoes">
+<h3>Sports Shoes</h3>
+<p class="price">₹1499</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
 
-<img src="logo.png" width="80" style="border-radius:50%;margin-bottom:10px;">
+<!-- PRODUCT 69 -->
+<div class="card">
+<img src="images/images (69).jpg" alt="Casual Shoes">
+<h3>Casual Shoes</h3>
+<p class="price">₹1199</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
 
-<h2 style="color:#D4AF37;">KaviShyam Store</h2>
+<!-- PRODUCT 70 -->
+<div class="card">
+<img src="images/images (70).jpg" alt="Flats">
+<h3>Women's Flats</h3>
+<p class="price">₹599</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
 
-<p>Quality You Can Trust, Service You Deserve.</p>
+<!-- PRODUCT 71 -->
+<div class="card">
+<img src="images/images (71).jpg" alt="Beauty Combo">
+<h3>Beauty Combo Pack</h3>
+<p class="price">₹999</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
 
-<br>
+<!-- PRODUCT 72 -->
+<div class="card">
+<img src="images/images (72).jpg" alt="Hair Dryer">
+<h3>Hair Dryer</h3>
+<p class="price">₹1499</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
 
-<p>📞 +91 7289094501</p>
+<!-- PRODUCT 73 -->
+<div class="card">
+<img src="images/images (73).jpg" alt="Hair Straightener">
+<h3>Hair Straightener</h3>
+<p class="price">₹1699</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
 
-<p>📧 info@kavishyamstore.in</p>
+<!-- PRODUCT 74 -->
+<div class="card">
+<img src="images/images (74).jpg" alt="Face Roller">
+<h3>Face Roller</h3>
+<p class="price">₹399</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
 
-<p>📍 New Delhi, India</p>
+<!-- PRODUCT 75 -->
+<div class="card">
+<img src="images/images (75).jpg" alt="Beauty Accessories">
+<h3>Beauty Accessories</h3>
+<p class="price">₹599</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+<!-- PRODUCT 76 -->
+<div class="card">
+<img src="images/images (76).jpg" alt="Fashion Bag">
+<h3>Fashion Bag</h3>
+<p class="price">₹899</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
 
-<br>
+<!-- PRODUCT 77 -->
+<div class="card">
+<img src="images/images (77).jpg" alt="Ladies Purse">
+<h3>Ladies Purse</h3>
+<p class="price">₹499</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
 
-<p>© 2026 KaviShyam Store. All Rights Reserved.</p>
+<!-- PRODUCT 78 -->
+<div class="card">
+<img src="images/images (78).jpg" alt="Shoulder Bag">
+<h3>Shoulder Bag</h3>
+<p class="price">₹799</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
 
-</footer>
+<!-- PRODUCT 79 -->
+<div class="card">
+<img src="images/images (79).jpg" alt="Handbag">
+<h3>Designer Handbag</h3>
+<p class="price">₹999</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
 
-</body>
-</html>
+<!-- PRODUCT 80 -->
+<div class="card">
+<img src="images/images (80).jpg" alt="Wallet">
+<h3>Premium Wallet</h3>
+<p class="price">₹399</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 81 -->
+<div class="card">
+<img src="images/images (81).jpg" alt="Hair Clip">
+<h3>Hair Clip Set</h3>
+<p class="price">₹199</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 82 -->
+<div class="card">
+<img src="images/images (82).jpg" alt="Hair Band">
+<h3>Hair Band</h3>
+<p class="price">₹149</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 83 -->
+<div class="card">
+<img src="images/images (83).jpg" alt="Scrunchies">
+<h3>Scrunchies Pack</h3>
+<p class="price">₹199</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 84 -->
+<div class="card">
+<img src="images/images (84).jpg" alt="Hair Brush">
+<h3>Hair Brush</h3>
+<p class="price">₹249</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 85 -->
+<div class="card">
+<img src="images/images (85).jpg" alt="Comb Set">
+<h3>Comb Set</h3>
+<p class="price">₹149</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 86 -->
+<div class="card">
+<img src="images/images (86).jpg" alt="Face Mask">
+<h3>Face Mask</h3>
+<p class="price">₹299</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 87 -->
+<div class="card">
+<img src="images/images (87).jpg" alt="Night Cream">
+<h3>Night Cream</h3>
+<p class="price">₹499</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 88 -->
+<div class="card">
+<img src="images/images (88).jpg" alt="Day Cream">
+<h3>Day Cream</h3>
+<p class="price">₹449</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 89 -->
+<div class="card">
+<img src="images/images (89).jpg" alt="Moisturizer">
+<h3>Moisturizer</h3>
+<p class="price">₹399</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 90 -->
+<div class="card">
+<img src="images/images (90).jpg" alt="Face Serum">
+<h3>Face Serum</h3>
+<p class="price">₹599</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 91 -->
+<div class="card">
+<img src="images/images (91).jpg" alt="Body Wash">
+<h3>Body Wash</h3>
+<p class="price">₹349</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 92 -->
+<div class="card">
+<img src="images/images (92).jpg" alt="Body Mist">
+<h3>Body Mist</h3>
+<p class="price">₹449</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 93 -->
+<div class="card">
+<img src="images/images (93).jpg" alt="Nail Art Kit">
+<h3>Nail Art Kit</h3>
+<p class="price">₹399</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 94 -->
+<div class="card">
+<img src="images/images (94).jpg" alt="Beauty Kit">
+<h3>Beauty Kit</h3>
+<p class="price">₹999</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 95 -->
+<div class="card">
+<img src="images/images (95).jpg" alt="Women's Combo">
+<h3>Women's Combo</h3>
+<p class="price">₹1499</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 96 -->
+<div class="card">
+<img src="images/images (96).jpg" alt="Gift Box">
+<h3>Gift Box</h3>
+<p class="price">₹899</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 97 -->
+<div class="card">
+<img src="images/images (97).jpg" alt="Fashion Combo">
+<h3>Fashion Combo</h3>
+<p class="price">₹1299</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
+
+<!-- PRODUCT 98 -->
+<div class="card">
+<img src="images/images (98).jpg" alt="Special Collection">
+<h3>Special Collection</h3>
+<p class="price">₹1999</p>
+<a href="https://www.meesho.com/" target="_blank" class="btn">Buy on Meesho</a>
+</div>
